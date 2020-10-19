@@ -2,18 +2,22 @@ package main
 
 import "testing"
 
-func TestHola(t *testing.T) {
-	// Step1 : test for empty argument
+func TestEmptyArgument(t *testing.T) {
 	emptyResult := hola("")
 
 	if emptyResult != "Hola Dude!" {
 		t.Errorf("hola(\"\") failed, expected %v, got %v", "Hola Dude!", emptyResult)
+	} else {
+		t.Logf("hola(\"\") success, expected %v, got %v", "Hola Dude!", emptyResult)
 	}
+}
 
-	// Step2 : test for valid argument
+func TestValidArgument(t *testing.T) {
 	result := hola("Mike")
 
 	if result != "Hola Mike!" {
 		t.Errorf("hola(\"Mike\") failed, expected %v, got %v", "Hola Mike!", result)
+	} else {
+		t.Logf("hola(\"Mike\") success, expected %v, got %v", "Hola Mike!", result)
 	}
 }
