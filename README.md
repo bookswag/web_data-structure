@@ -10,3 +10,5 @@ env
 main command
 - go run main.go
 - go test -v
+    - go test ./hola -v
+    - go test ./calc -v

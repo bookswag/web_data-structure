@@ -1,8 +1,8 @@
-package main
+package hola
 
 import "fmt"
 
-func hola(name string) string {
+func Hola(name string) string {
 	if len(name) == 0 {
 		return "Hola Dude!"
 	}
